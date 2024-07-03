@@ -9,9 +9,8 @@ const AuthRoutes = ["/login", "/register"];
 const commonPrivateRoutes = ["/dashboard", "/dashboard/change-password"];
 const roleBasedPrivateRoutes = {
   USER: [/^\/dashboard\/user/],
-  
+
   ADMIN: [/^\/dashboard\/admin/],
- 
 };
 
 export function middleware(request: NextRequest) {
@@ -54,10 +53,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/login",
-    "/register",
-    "/dashboard/:page*",
-    // "/donner-list/details/:page*",
-  ],
+  matcher: ["/login", "/register", "/dashboard/:page*"],
 };

@@ -16,8 +16,8 @@ app.use(cookieParser());
 
 const corsOptions = {
   origin: [
-    "https://portfolio-masum-fullstack.vercel.app/",
-    "http://localhost:3000",
+    "https://portfolio-masum-fullstack.vercel.app",
+    "https://portfoliodashboard-client.vercel.app",
   ],
   credentials: true,
 };
